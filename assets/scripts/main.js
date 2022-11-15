@@ -132,8 +132,7 @@ async function getRecipes() {
         //            if you have, then save the recipes to storage using the function
         //            we have provided. Then, pass the recipes array to the Promise's
         //            resolve() method.
-        if(recipes.length == RECIPE_URLS.length)
-          {
+        if(recipes.length == RECIPE_URLS.length){
             saveRecipesToStorage(recipes);
             resolve(recipes);
           }
@@ -144,10 +143,7 @@ async function getRecipes() {
         reject(error);
       }
     }
-    
-    
   })
-
 }  
 
 /**
